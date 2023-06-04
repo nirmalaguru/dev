@@ -1,0 +1,3 @@
+entries.hello_world:
+  title: 'Entries'
+  url: 'internal:/listallentries'

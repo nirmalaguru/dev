@@ -1,0 +1,5 @@
+name: Entries
+type: module
+description: 'Entries'
+package: Custom
+core_version_requirement: ^8.8 || ^9

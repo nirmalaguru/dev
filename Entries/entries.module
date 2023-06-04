@@ -1,0 +1,30 @@
+<?php
+/**
+ * @File
+ * entries custom module for Drupal 8.
+ * @author Nirmala
+ */
+
+/**
+ * Implementing hook_menu().
+ */
+function entries_menu() {
+  // The paths given here need to match the ones in entries.routing.yml exactly.
+  $items['/listallentries'] = array(
+    'title' => 'listallentries page',
+    'description' => 'This is a entries page.',
+    // The name of the route from entries.routing.yml
+    'route' => 'entries.my_page',
+  );
+  return $items;
+}
+
+/**
+ *  run cron
+
+function entries_preprocess_node(&$variables){
+
+  $data = \Drupal::service('entries.get_data_user_node')->getData();
+  var_dump($data);
+}
+ */

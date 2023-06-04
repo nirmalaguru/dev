@@ -1,0 +1,8 @@
+services:
+  entries.custom_services:
+    class: Drupal\entries\EntriesCustomService
+    arguments: ['@current_user']
+
+  entries.get_data_user_node:
+    class: Drupal\entries\GetDataServices
+    arguments: ['@database']

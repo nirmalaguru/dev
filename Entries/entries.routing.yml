@@ -1,0 +1,14 @@
+entries.my_page:
+  path: '/listallentries'
+  defaults:
+    _controller: '\Drupal\entries\Controller\EntriesController::myPage'
+    _title: 'ListAll entries'
+  requirements: 
+    _permission: 'access content'
+entries.entriesdata:
+  path: '/listallcontrollerentries'
+  defaults:
+    _controller: '\Drupal\entries\Controller\GetDataServicesController::dynamusers'
+    _title: 'ListAll entries by GetDataServicesController'
+  requirements: 
+    _permission: 'access content'
